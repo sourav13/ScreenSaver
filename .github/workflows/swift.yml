@@ -1,17 +1,17 @@
 name: CI
-
-on: 
-  push:
-    branches:
-      - master
-
+on: [push]
 jobs:
-  build:
+      build:
+        runs-on: macos-latest
 
-    runs-on: macos-latest
-    
-    steps:
-    - uses: actions/checkout@master
-    - name: Test
-      run: |
-        xcodebuild test -project ScreenSaver.xcodeproj -scheme ScreenSaverTests -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6,OS=12.2"
+        steps:
+        - name: Checkout
+          uses: actions/checkout@master
+        - name: CocoaPod Install
+          run: pod install
+      #- name: Testing....
+      # run: ls /Applications | grep Xcode
+        - name: Force xcode 11
+          run: sudo xcode-select -switch /Applications/Xcode_11.3.app
+        - name: iPhone 11 Test
+          run: xcodebuild test -scheme ScreenSaver -workspace ScreenSaver.xcworkspace -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.1'
