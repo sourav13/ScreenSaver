@@ -8,9 +8,10 @@ on:
 jobs:
   build:
 
-    runs-on: sourav's MacBook Pro
+    runs-on: macos-latest
     
     steps:
     - uses: actions/checkout@master
-    - name: Start xcodebuild test
-      run: xcodebuild clean test -project ScreenSaver.xcodeproj -scheme ScreenSaver -destination "platform=iOS Simulator,name=iPhone 11 Pro"
+    - name: Test
+      run: |
+        xcodebuild test -project ScreenSaver.xcodeproj -scheme ScreenSaverTests -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6,OS=12.2"
