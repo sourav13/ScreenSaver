@@ -42,6 +42,7 @@
 		18FDD0F823A60A73001A937F /* ScreenSaverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreenSaverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18FDD0FA23A60A73001A937F /* ScreenSaverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenSaverTests.swift; sourceTree = "<group>"; };
 		18FDD0FC23A60A73001A937F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18FDD10223A60D51001A937F /* ScreenSaver.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = ScreenSaver.xctestplan; path = /Users/souravsachdeva/Desktop/ScreenSaver/ScreenSaver/ScreenSaver.xctestplan; sourceTree = "<absolute>"; };
 		3E52A9BE6F5EDBD30B2FF809 /* Pods-ScreenSaver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenSaver.debug.xcconfig"; path = "Target Support Files/Pods-ScreenSaver/Pods-ScreenSaver.debug.xcconfig"; sourceTree = "<group>"; };
 		7242BB73DAB243115618FC66 /* Pods_ScreenSaver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreenSaver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C98A88CD5621B9E678D08837 /* Pods-ScreenSaver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenSaver.release.xcconfig"; path = "Target Support Files/Pods-ScreenSaver/Pods-ScreenSaver.release.xcconfig"; sourceTree = "<group>"; };
@@ -97,6 +98,7 @@
 				185A8B6F23A5A49700782EE6 /* Main.storyboard */,
 				185A8B7223A5A49A00782EE6 /* Assets.xcassets */,
 				185A8B7423A5A49A00782EE6 /* LaunchScreen.storyboard */,
+				18FDD10223A60D51001A937F /* ScreenSaver.xctestplan */,
 				185A8B7723A5A49A00782EE6 /* Info.plist */,
 			);
 			path = ScreenSaver;

@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/souravsachdeva/Desktop/ScreenSaver/ScreenSaver/ScreenSaver.xctestplan">
+   </FileRef>
+   <FileRef
       location = "group:ScreenSaver.xcodeproj">
    </FileRef>
    <FileRef
