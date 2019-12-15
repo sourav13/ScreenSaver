@@ -12,4 +12,5 @@ jobs:
       #- name: Testing....
       # run: ls /Applications | grep Xcode
         - name: iPhone 11 Test
-          run: xcodebuild build -workspace ScreenSaver.xcworkspace -scheme ScreenSaver -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.1'
+          run: xcodebuild build -workspace ScreenSaver.xcworkspace -scheme ScreenSaver -destination "platform=iOS Simulator,name=iPhone 11 Pro"
+
