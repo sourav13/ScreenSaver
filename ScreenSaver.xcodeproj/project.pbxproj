@@ -14,6 +14,7 @@
 		185A8B7323A5A49A00782EE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185A8B7223A5A49A00782EE6 /* Assets.xcassets */; };
 		185A8B7623A5A49A00782EE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185A8B7423A5A49A00782EE6 /* LaunchScreen.storyboard */; };
 		185A8B7F23A5B00700782EE6 /* EventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185A8B7E23A5B00700782EE6 /* EventManager.swift */; };
+		1C0F4617D1846E819CB0D90D /* Pods_ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7242BB73DAB243115618FC66 /* Pods_ScreenSaver.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,9 @@
 		185A8B7723A5A49A00782EE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		185A8B7D23A5AAD200782EE6 /* ScreenSaver.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScreenSaver.entitlements; sourceTree = "<group>"; };
 		185A8B7E23A5B00700782EE6 /* EventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventManager.swift; sourceTree = "<group>"; };
+		3E52A9BE6F5EDBD30B2FF809 /* Pods-ScreenSaver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenSaver.debug.xcconfig"; path = "Target Support Files/Pods-ScreenSaver/Pods-ScreenSaver.debug.xcconfig"; sourceTree = "<group>"; };
+		7242BB73DAB243115618FC66 /* Pods_ScreenSaver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreenSaver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C98A88CD5621B9E678D08837 /* Pods-ScreenSaver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenSaver.release.xcconfig"; path = "Target Support Files/Pods-ScreenSaver/Pods-ScreenSaver.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C0F4617D1846E819CB0D90D /* Pods_ScreenSaver.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +50,8 @@
 			children = (
 				185A8B6823A5A49700782EE6 /* ScreenSaver */,
 				185A8B6723A5A49700782EE6 /* Products */,
+				D4F6E500147E5818F1E78FFA /* Pods */,
+				9C57F67AA7900E83CB067762 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +79,24 @@
 			path = ScreenSaver;
 			sourceTree = "<group>";
 		};
+		9C57F67AA7900E83CB067762 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7242BB73DAB243115618FC66 /* Pods_ScreenSaver.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4F6E500147E5818F1E78FFA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E52A9BE6F5EDBD30B2FF809 /* Pods-ScreenSaver.debug.xcconfig */,
+				C98A88CD5621B9E678D08837 /* Pods-ScreenSaver.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,6 +104,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 185A8B7A23A5A49A00782EE6 /* Build configuration list for PBXNativeTarget "ScreenSaver" */;
 			buildPhases = (
+				1479E01F78CBC67C0A990D4D /* [CP] Check Pods Manifest.lock */,
 				185A8B6223A5A49700782EE6 /* Sources */,
 				185A8B6323A5A49700782EE6 /* Frameworks */,
 				185A8B6423A5A49700782EE6 /* Resources */,
@@ -137,6 +163,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1479E01F78CBC67C0A990D4D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScreenSaver-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		185A8B6223A5A49700782EE6 /* Sources */ = {
@@ -288,6 +339,7 @@
 		};
 		185A8B7B23A5A49A00782EE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E52A9BE6F5EDBD30B2FF809 /* Pods-ScreenSaver.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ScreenSaver/ScreenSaver.entitlements;
@@ -307,6 +359,7 @@
 		};
 		185A8B7C23A5A49A00782EE6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C98A88CD5621B9E678D08837 /* Pods-ScreenSaver.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ScreenSaver/ScreenSaver.entitlements;

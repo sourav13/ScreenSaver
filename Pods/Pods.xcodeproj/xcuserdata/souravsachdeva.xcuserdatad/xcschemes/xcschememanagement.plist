@@ -4,19 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>ScreenSaver.xcscheme_^#shared#^_</key>
+		<key>Pods-ScreenSaver.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>185A8B6523A5A49700782EE6</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>
