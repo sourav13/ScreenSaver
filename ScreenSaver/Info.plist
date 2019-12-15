@@ -60,5 +60,13 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSRemindersUsageDescription</key>
+	<string>Can we use your reminders data</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>Can we use your calendars</string>
+	<key>NSContactsUsageDescription</key>
+	<string>Can we use your contacts.</string>
+	<key>com.apple.security.personal-information </key>
+	<string>Can we access your personal info</string>
 </dict>
 </plist>

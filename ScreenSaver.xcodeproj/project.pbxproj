@@ -13,6 +13,7 @@
 		185A8B7123A5A49700782EE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185A8B6F23A5A49700782EE6 /* Main.storyboard */; };
 		185A8B7323A5A49A00782EE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185A8B7223A5A49A00782EE6 /* Assets.xcassets */; };
 		185A8B7623A5A49A00782EE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185A8B7423A5A49A00782EE6 /* LaunchScreen.storyboard */; };
+		185A8B7F23A5B00700782EE6 /* EventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185A8B7E23A5B00700782EE6 /* EventManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		185A8B7223A5A49A00782EE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		185A8B7523A5A49A00782EE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		185A8B7723A5A49A00782EE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		185A8B7D23A5AAD200782EE6 /* ScreenSaver.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScreenSaver.entitlements; sourceTree = "<group>"; };
+		185A8B7E23A5B00700782EE6 /* EventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +59,11 @@
 		185A8B6823A5A49700782EE6 /* ScreenSaver */ = {
 			isa = PBXGroup;
 			children = (
+				185A8B7D23A5AAD200782EE6 /* ScreenSaver.entitlements */,
 				185A8B6923A5A49700782EE6 /* AppDelegate.swift */,
 				185A8B6B23A5A49700782EE6 /* SceneDelegate.swift */,
 				185A8B6D23A5A49700782EE6 /* ViewController.swift */,
+				185A8B7E23A5B00700782EE6 /* EventManager.swift */,
 				185A8B6F23A5A49700782EE6 /* Main.storyboard */,
 				185A8B7223A5A49A00782EE6 /* Assets.xcassets */,
 				185A8B7423A5A49A00782EE6 /* LaunchScreen.storyboard */,
@@ -140,6 +145,7 @@
 			files = (
 				185A8B6E23A5A49700782EE6 /* ViewController.swift in Sources */,
 				185A8B6A23A5A49700782EE6 /* AppDelegate.swift in Sources */,
+				185A8B7F23A5B00700782EE6 /* EventManager.swift in Sources */,
 				185A8B6C23A5A49700782EE6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +290,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ScreenSaver/ScreenSaver.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X49G5RK3N2;
 				INFOPLIST_FILE = ScreenSaver/Info.plist;
@@ -302,6 +309,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ScreenSaver/ScreenSaver.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X49G5RK3N2;
 				INFOPLIST_FILE = ScreenSaver/Info.plist;
